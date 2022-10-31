@@ -1,0 +1,203 @@
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    color:azure;
+    text-align: center;  
+}
+table {
+    background-color:rgb(161,160,160);
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 2em;
+    
+}
+th {
+    text-align: center;
+}
+td {
+    font-weight: bold;
+    padding: .5em;
+    
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+
+}
+body {
+    
+    background-color: rgb(64, 67, 68);
+    margin: 0 15%;
+    color:black; 
+}
+p {
+    background-color:darkgrey;
+    border-radius: 1em;
+    padding: 1em;
+    font-weight: bold;
+    box-shadow: .3em .3em rgb(44, 42, 42);
+    margin: 1em;
+    
+}
+html {
+    background-color:rgb(34, 34, 34);
+}
+.image {
+    padding: 1em;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+.btn {
+    background-color: antiquewhite;
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    color: black;
+    animation: rotate 3s infinite;
+}
+@keyframes rotate {
+    to {transform: rotateZ(360deg)}
+}
+.btn:hover { 
+    background:rgb(99, 128, 172);
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.04,.85,1,.37);
+    transform: rotateZ(360deg)
+}
+.inputform {
+    background-color: aliceblue;
+    border-radius: 1em;
+    padding: 1em;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: [header-start] 100px [content-start] 600px [footer-start] 200px;   
+	grid-template-columns: [adsleft] 200px [main] 1fr [adsright] 200px;  
+    grid-template-areas: 
+    'header header header'
+    'left main right'
+    'footer footer footer';
+}
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+    margin-top: 2em;
+    /* margin-bottom: 3em; */
+    
+}
+.wrap-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p2{
+    align-items: baseline;
+    padding-top: 8%;
+}
+.inputform {
+    background-color:rgb(161,160,160);
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    /* body{width:60%} */
+    .grid-container {
+        display: grid;
+        grid-template-rows: [header-start] 100px [content-start] 700px [footer-start] 200px;   
+        grid-template-columns: [adsleft] 200px [main] 1fr [adsright] 200px;  
+        grid-template-areas: 
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    }
+    img{
+        max-width: 300px;
+        max-height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    /* body{width:60%} */
+    .grid-container {
+        display: grid;
+        grid-template-rows: [header-start] 100px [content-start] 700px [footer-start] 200px;   
+        grid-template-columns: [main] 1fr ;  
+        grid-template-areas: 
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    }
+    img{
+        max-width: 400px;
+        max-height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* body{width:60%} */
+    .grid-container {
+        display: grid;
+        grid-template-rows: [header-start] 100px [content-start] 750px [footer-start] 200px;   
+        grid-template-columns: [ads-left] 200px [main] 1fr [ads-right] 200px;
+        grid-template-areas: 
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    }
+    img{
+        max-width: 500px;
+        max-height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* body{width:60%} */
+    .grid-container {
+        display: grid;
+        grid-template-rows: [header-start] 100px [content-start] 700px [footer-start] 200px;   
+        grid-template-columns: [ads-left] 200px [main] 1fr [ads-right] 200px;
+        grid-template-areas: 
+        'header header header'
+        'left main right'
+        'footer footer footer';
+    }
+    img{
+        max-width: 500px;
+        max-height: 300px;
+        /* transform: rotateY(30deg); */
+    }
+    .wrap{
+        display: flex;
+    }
+}
+
+
+
+
+
+

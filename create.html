@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="StyleSheet.css">
+	<title>Create a post</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="grid-container">
+
+			<div class="header">
+				<h2>This is an area for you to create a post</h2>
+			</div>
+
+			<div class="main">
+				<p>
+					To create a post it please enter text above and below as well as upload an image
+				</p>
+				<div class="inputform">
+					<form>
+						<label for="title">Title</label><br>
+						<input type="text" id="title" name="title"><br><br>
+						<label for="uppertext"> Upper Text</label><br>
+						<textarea id="uppertext" name="uppertext" rows="4" cols="50">Text for above the picture</textarea><br><br>
+						<label for="uploadedimage">Image</label><br>
+						<input type="file"><br><br>
+						<label for="lowertext">Lower Text</label><br>
+						<textarea id="lowertext" name="lowertext" rows="4" cols="50">Text for below the picture</textarea><br><br>
+						<input type="submit" value="Submit">
+					</form>
+				</div>	
+			</div>
+
+			<div class="footer">
+				<a href="index.html"><button class="btn">Take me back to the title page</button></a>
+			</div>
+
+		</div>
+	</body>
+</html>
